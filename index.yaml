@@ -3,7 +3,17 @@ entries:
   mongodb:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T23:13:01.273899-04:00"
+    created: "2022-08-23T00:17:23.176293-04:00"
+    description: A Helm chart for mongodb
+    digest: d6966bf4c3d840b8d3f3495a45c040d81724cfbae8a48f0afcf9bfb8306c07f9
+    name: mongodb
+    type: application
+    urls:
+    - mongodb-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-08-23T00:17:23.175956-04:00"
     description: A Helm chart for mongodb
     digest: 4e93dfc847ea9f5a7bf69038b6512bd725e32acccc2072fbfb73f35f4a132873
     name: mongodb
@@ -14,7 +24,7 @@ entries:
   nodeapp:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T23:13:01.275874-04:00"
+    created: "2022-08-23T00:17:23.178567-04:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -29,7 +39,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T23:13:01.275314-04:00"
+    created: "2022-08-23T00:17:23.177819-04:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -44,7 +54,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T23:13:01.274655-04:00"
+    created: "2022-08-23T00:17:23.177085-04:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -57,4 +67,4 @@ entries:
     urls:
     - nodeapp-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-22T23:13:01.273183-04:00"
+generated: "2022-08-23T00:17:23.175017-04:00"
