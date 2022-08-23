@@ -3,7 +3,7 @@ entries:
   mongodb:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T23:05:52.143415-04:00"
+    created: "2022-08-22T23:13:01.273899-04:00"
     description: A Helm chart for mongodb
     digest: 4e93dfc847ea9f5a7bf69038b6512bd725e32acccc2072fbfb73f35f4a132873
     name: mongodb
@@ -14,7 +14,22 @@ entries:
   nodeapp:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T23:05:52.145228-04:00"
+    created: "2022-08-22T23:13:01.275874-04:00"
+    dependencies:
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: https://thedevopsstore.github.io/lwplabs-charts/
+      version: 0.1.0
+    description: A Helm chart for NodeJs Application
+    digest: bb5479bccae5841595a6638dcd3eddd7da67fecf424dca1c7de4ce68c246f041
+    name: nodeapp
+    type: application
+    urls:
+    - nodeapp-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-08-22T23:13:01.275314-04:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -29,7 +44,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T23:05:52.144433-04:00"
+    created: "2022-08-22T23:13:01.274655-04:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -42,4 +57,4 @@ entries:
     urls:
     - nodeapp-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-22T23:05:52.142309-04:00"
+generated: "2022-08-22T23:13:01.273183-04:00"
