@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  mongodb:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-08-22T22:50:47.270722-04:00"
+    description: A Helm chart for mongodb
+    digest: 4e93dfc847ea9f5a7bf69038b6512bd725e32acccc2072fbfb73f35f4a132873
+    name: mongodb
+    type: application
+    urls:
+    - mongodb-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-08-22T22:50:47.270063-04:00"
