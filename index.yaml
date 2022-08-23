@@ -3,7 +3,7 @@ entries:
   mongodb:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-23T00:17:23.176293-04:00"
+    created: "2022-08-23T00:21:41.984818-04:00"
     description: A Helm chart for mongodb
     digest: d6966bf4c3d840b8d3f3495a45c040d81724cfbae8a48f0afcf9bfb8306c07f9
     name: mongodb
@@ -13,7 +13,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-23T00:17:23.175956-04:00"
+    created: "2022-08-23T00:21:41.984166-04:00"
     description: A Helm chart for mongodb
     digest: 4e93dfc847ea9f5a7bf69038b6512bd725e32acccc2072fbfb73f35f4a132873
     name: mongodb
@@ -24,7 +24,22 @@ entries:
   nodeapp:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-23T00:17:23.178567-04:00"
+    created: "2022-08-23T00:21:41.990901-04:00"
+    dependencies:
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: https://thedevopsstore.github.io/lwplabs-charts/
+      version: 0.1.2
+    description: A Helm chart for NodeJs Application
+    digest: b0f55b136e8c10bc801b84aaf3d0a9f900f5dd47019ea8fbd8da84924758bba2
+    name: nodeapp
+    type: application
+    urls:
+    - nodeapp-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-08-23T00:21:41.987605-04:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -39,7 +54,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-23T00:17:23.177819-04:00"
+    created: "2022-08-23T00:21:41.986652-04:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -54,7 +69,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-23T00:17:23.177085-04:00"
+    created: "2022-08-23T00:21:41.985764-04:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -67,4 +82,4 @@ entries:
     urls:
     - nodeapp-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-23T00:17:23.175017-04:00"
+generated: "2022-08-23T00:21:41.98342-04:00"
